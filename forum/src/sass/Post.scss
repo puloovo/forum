@@ -1,0 +1,260 @@
+a {
+    text-decoration: none !important;
+}
+
+.PostforumBGC {
+    position: relative;
+
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .Post>.PostTiltle>h1 {
+        font-size: 20px !important;
+    }
+
+    .Post>.PostTiltle>.PostTiltleHeader {
+        >h1 {
+            font-size: 25px;
+        }
+    }
+
+
+
+    h3 {
+        font-size: 18px;
+    }
+
+}
+
+.Post {
+    position: relative;
+    color: white;
+    background-color: rgb(52, 56, 58);
+    border-radius: 35px;
+    -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+    box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+    top: 80px;
+
+    .PostTiltle {
+        position: relative;
+        display: flex;
+        margin: 0px 10px;
+        height: 80px;
+
+        >h1 {
+            position: relative;
+            line-height: 80px;
+            font-size: 36px;
+        }
+
+
+
+        .PostTiltleHeader {
+            background-color: rgb(50, 137, 194);
+            border-radius: 25px;
+            padding: 0 10px;
+            margin: 10px;
+
+            >h1 {
+                position: relative;
+                line-height: 60px;
+            }
+
+
+        }
+    }
+}
+
+
+
+
+.PostContent {
+    background-color: rgb(34, 34, 34);
+    border-radius: 0 0 35px 35px;
+    position: relative;
+
+    div>img {
+        width: 100%;
+    }
+
+    .UserInfo {
+        display: flex;
+        width: 20%;
+        height: 70px;
+        margin: 0px 50px;
+        padding: 20px;
+
+        .btnedit {
+            position: absolute;
+            // height: 25px;
+            right: 0;
+            top: 0;
+            border: none;
+            font-size: 16px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .UserInfoName {
+            display: flex;
+            height: 28px;
+            margin: 10px 15px;
+
+            >span {
+                font-size: 1.25rem;
+                padding: 0 5px;
+                border-radius: 10px;
+                background: rgb(48, 209, 113);
+                background: linear-gradient(0deg, rgba(48, 209, 113, 1) 0%, rgba(48, 209, 113, 0) 100%);
+            }
+
+            >p {
+                font-size: 1.25rem;
+                margin: 0 10px;
+
+            }
+        }
+
+        .UserInfoBar {
+
+            >p {
+                width: 200px;
+                margin: 0 15px;
+            }
+
+        }
+
+    }
+
+    .PostContentText {
+        text-align: center;
+        padding: 50px;
+
+        .PostContentPic {
+            width: 50%;
+            display: block;
+            margin: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+
+    }
+
+
+
+    .VoteBtn {
+        display: flex;
+        height: 40px;
+
+        .BTNcss {
+            border: none;
+            padding: 0px;
+            margin: 2px 5px;
+        }
+
+        .VoteBtnPos {
+            display: flex;
+
+            .VoteBtnPosPic {
+
+
+                img {
+                    width: 100%;
+                    height: 35px;
+                }
+
+
+
+            }
+
+        }
+
+        p {
+            font-size: 2rem;
+            line-height: 40px;
+        }
+
+
+
+        .VoteBtnNeg {
+            display: flex;
+
+            .VoteBtnNegPic {
+                img {
+                    width: 100%;
+                    height: 35px;
+
+                }
+            }
+        }
+
+        p {
+            font-size: 2rem;
+            line-height: 40px;
+
+        }
+
+    }
+}
+
+.Postcomment {
+    background-color: rgb(1, 19, 36);
+    border-radius: 0 0 35px 35px;
+
+    .comment {
+        display: flex;
+        height: 60px;
+
+        &:hover {
+            background-color: rgb(27, 70, 102);
+
+            &:last-child {
+                border-radius: 0 0 35px 35px;
+            }
+
+        }
+
+        .commentPic {
+            position: relative;
+
+            >img {
+                height: 60px;
+                width: min-content;
+            }
+        }
+
+        .commenttext {
+            display: flex;
+            text-align: center;
+
+            p {
+                padding: 0 15px;
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 24px;
+                color: rgb(48, 209, 113);
+
+            }
+        }
+
+        .CommentInfo {
+            display: inline-flex;
+            position: absolute;
+            top: 0;
+            line-height: 85px;
+            padding: 0 5px;
+        }
+
+    }
+}

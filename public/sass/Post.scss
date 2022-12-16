@@ -1,0 +1,377 @@
+body {
+    background-color: rgb(23, 32, 44) !important;
+}
+
+.main-head {
+    background-color: rgb(0, 41, 80);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    color: white;
+    height: 65px;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+
+    h1 {
+        font-size: 56px;
+        // background-color: aqua;
+        // bottom: 25px;
+        margin: 0px 250px 0px 350px;
+        position: relative;
+    }
+
+    nav {
+
+        position: relative;
+        // left: 25%;
+        bottom: 5px;
+
+
+        ul {
+            display: flex;
+            padding: 0px;
+
+            :hover {
+                background-color: rgb(0, 49, 106);
+                height: 80px;
+            }
+
+
+
+            li {
+                list-style-type: none;
+                position: relative;
+                bottom: 11px;
+
+                a {
+                    position: relative;
+                    top: 20px;
+                    margin: 0 35px;
+                    font-size: 32px;
+                    color: white;
+                    border-bottom: 0px solid #f00;
+                    transition: .4s;
+
+
+
+                    &::after {
+                        content: " ";
+                        position: absolute;
+                        right: 50%;
+                        left: 50%;
+                        bottom: -5px;
+                        border-bottom: 4px solid white;
+                        transition: .3s;
+                    }
+
+                    &:hover {
+                        &::after {
+                            right: 0%;
+                            left: 0%;
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+    .searchbar {
+        border-radius: 25px;
+        height: 60%;
+        background-color: rgb(106, 106, 106);
+        display: flex;
+        position: relative;
+        margin: 20px 0px;
+        left: 32%;
+
+        input {
+            border: 0px;
+            border-radius: 25px 0px 0px 25px;
+            font-size: 28px;
+        }
+
+        img {
+            height: 80%;
+            margin: 5px 25px;
+        }
+
+    }
+
+
+    button {
+        margin: 10px 350px;
+        font-size: 32px;
+        position: absolute;
+        right: 0px;
+        // left: 55%;
+        // bottom: 20px;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.forumBGC {
+    // background-color: rgb(32, 28, 28);
+    position: relative;
+    // top: 80px;
+    margin: 80px 280px;
+
+}
+
+.Post {
+    position: relative;
+    color: white;
+    background-color: rgb(52, 56, 58);
+    margin: 100px 0px 0px 0px;
+    border-radius: 35px;
+    width: 80%;
+    left: 10%;
+    -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+    box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+
+    .PostTiltle {
+        display: flex;
+        margin: 0px 50px;
+
+        >h1 {
+            position: relative;
+            top: 25px;
+        }
+
+
+        .PostTiltleHeader {
+            background-color: rgb(50, 137, 194);
+            border-radius: 25px;
+            position: relative;
+            padding: 0 10px;
+            height: 60px;
+            margin: 20px 0px;
+
+            >h1 {
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+
+    .PostContent {
+        background-color: rgb(34, 34, 34);
+        margin: 0 25px;
+        border-radius: 35px;
+        // padding: 50px 0px;
+
+        .UserInfo {
+            display: flex;
+            width: 20%;
+            // height: 70px;
+            margin: 0px 50px;
+            padding: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .UserInfoName {
+                width: 140px;
+                display: flex;
+                height: 28px;
+                margin: 10px 15px;
+
+                >span {
+                    font-size: 20px;
+                    padding: 0 5px;
+                    margin: 0 10px;
+                    border-radius: 10px;
+                    background: rgb(48, 209, 113);
+                    background: linear-gradient(0deg, rgba(48, 209, 113, 1) 0%, rgba(48, 209, 113, 0) 100%);
+                }
+
+                >p {
+                    font-size: 20px;
+                }
+            }
+
+            .UserInfoBar {
+
+                >p {
+                    font-size: 20px;
+                    width: 200px;
+                    margin: 0 25px;
+                }
+
+            }
+
+            .Vote {
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+                margin: 10px 60px;
+
+                .VotePos {
+                    background-color: rgb(23, 149, 12);
+                    display: flex;
+                    height: 30px;
+
+                    p {
+                        font-size: 22px;
+                        padding: 0 15px;
+                    }
+
+                    .VotePic {
+                        >img {
+                            width: 100%;
+                        }
+
+                    }
+
+                }
+
+                .VoteNeg {
+                    position: relative;
+                    background-color: rgb(222, 69, 69);
+                    height: 30px;
+                    display: flex;
+
+                    p {
+                        font-size: 22px;
+                        padding: 0 15px;
+                    }
+
+                    .VotePic {
+                        >img {
+                            width: 100%;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .PostContentText {
+            text-align: center;
+            padding: 20px 80px;
+
+            .PostContentPic {
+                width: 50%;
+                display: block;
+                margin: auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+
+        }
+
+        .VoteBtn {
+            display: flex;
+            width: 25%;
+
+            .VoteBtnPos {
+                display: flex;
+
+                // background-color: #f00;
+                .VoteBtnPosPic {
+                    padding: 0px 10px;
+
+                    img {
+                        width: 100%;
+                        height: 60%;
+                    }
+                }
+
+                p {
+                    font-size: 30px;
+                }
+            }
+
+            .VoteBtnNeg {
+                display: flex;
+
+                // background-color: #f00;
+                .VoteBtnNegPic {
+                    padding: 0px 10px;
+
+                    img {
+                        width: 100%;
+                        height: 62%;
+                    }
+                }
+
+                p {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .Postcomment {
+        background-color: rgb(1, 19, 36);
+        border-radius: 0 0 35px 35px;
+
+        .comment {
+            padding: 0 80px;
+            display: flex;
+            height: 76px;
+
+            &:hover {
+                background-color: rgb(27, 70, 102);
+
+                &:last-child {
+                    border-radius: 0 0 35px 35px;
+                }
+
+            }
+
+            .commentPic {
+                width: 9%;
+                height: 100%;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
+
+
+            .commenttext {
+                display: flex;
+                padding: 15px 0px 30px 0px;
+                width: 100%;
+                height: 0%;
+
+                >p {
+                    font-size: 20px;
+                }
+
+                >h3 {
+                    font-size: 24px;
+                    color: rgb(48, 209, 113);
+                    padding: 0 15px;
+                }
+            }
+
+            .CommentInfo {
+                display: inline-flex;
+                width: 10%;
+                height: 0%;
+                padding: 0 10px;
+
+                >p {
+                    font-size: 16px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+}

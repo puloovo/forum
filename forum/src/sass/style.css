@@ -1,0 +1,137 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  color: rgb(252, 252, 252);
+} */
+
+/* 登入頁 */
+.clo {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://cdn.discordapp.com/attachments/1029313785917349900/1045168850418794516/LoginBG_02.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px;
+}
+
+.main {
+  height: 70vh;
+  background-image: url("https://cdn.discordapp.com/attachments/1029313785917349900/1045168850418794516/LoginBG_02.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link {
+  text-decoration: none;
+  color: lightgrey;
+}
+.link:hover {
+  color: rgb(156, 152, 152);
+}
+.m-auto input {
+  padding: 5px 0px;
+}
+
+.login-form .login-info {
+  position: relative;
+}
+.login-form .login-info input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  border: 1px solid #000;
+  outline: none;
+  background: transparent;
+}
+#form input {
+  padding: 5px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  border: 3px solid rgb(240, 237, 237);
+  outline: none;
+  background: transparent;
+}
+#form input:focus {
+  border-color: rgb(36, 80, 201);
+  transition: border 0.5s;
+}
+#form input::placeholder {
+  color: rgb(188, 184, 184);
+}
+/* 會員資訊頁 */
+
+.info:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 15px 5px #01030e;
+}
+
+.imgRadius {
+  border-radius: 50%;
+
+  overflow: hidden;
+  border: 1px solid red;
+}
+img {
+  object-fit: cover;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/* 訂單區 */
+.orderShadow {
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+.box1 {
+  background-color: rgb(24, 32, 44);
+  height: 100vh;
+  overflow: scroll;
+}
+.box1::-webkit-scrollbar {
+  display: none;
+}
+.box1 h6 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.orderText {
+  color: rgb(164, 160, 160);
+}
+.orderText:hover {
+  color: rgb(250, 245, 245);
+  cursor: pointer;
+}
+/* 遊戲庫 */
+.gameCard {
+  height: 14vmax;
+  overflow: hidden;
+  object-fit: contain;
+  position: relative;
+}
+
+.gameCard div {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 90%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.gameCard:hover div {
+  opacity: 1;
+}
+/* 我的評論區 */
+.comSpan span {
+  color: rgb(171, 166, 166);
+}

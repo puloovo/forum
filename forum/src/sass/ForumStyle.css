@@ -1,0 +1,402 @@
+body {
+  background-color: rgb(23, 32, 44) !important;
+  font-family: Microsoft JhengHei;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.forumBGC {
+  background-color: rgb(32, 28, 28);
+  position: relative;
+  top: 80px;
+  padding: 5px;
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+
+.forumTitle {
+  position: relative;
+  text-align: center;
+}
+.forumTitle h1 {
+  background: rgb(37, 77, 123);
+  background: linear-gradient(0deg, rgba(37, 77, 123, 0) 0%, rgb(0, 49, 106) 100%);
+  font-size: 120px;
+  color: white;
+}
+.forumTitle p {
+  color: white;
+  font-size: 25px;
+  position: relative;
+}
+
+.forumbar {
+  position: relative;
+}
+.forumbar ul {
+  display: flex;
+  padding: 0px;
+  position: relative;
+  justify-content: center;
+}
+.forumbar ul li {
+  background-color: rgb(0, 49, 106);
+  background: linear-gradient(0deg, rgb(0, 49, 106) 0%, rgba(0, 49, 106, 0) 100%);
+  list-style-type: none;
+  font-size: 30px;
+  margin: 0 20px;
+  padding: 0 15px;
+  border-radius: 25px;
+  text-align: center;
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+.forumbar ul li a {
+  color: white;
+}
+
+.forumpost {
+  color: white;
+  margin: 0px;
+  display: flex;
+}
+.forumpost .forumpost-1 {
+  text-align: center;
+  background-color: rgb(26, 27, 55);
+  padding: 0px;
+  margin: auto;
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+.forumpost .forumpost-1 h1 {
+  font-size: 28px;
+  padding: 0 25px;
+  background-color: rgb(20, 130, 191);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.forumpost .forumpost-1 > p {
+  font-size: 18px;
+  text-align: start;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  margin: 15px;
+}
+.forumpost .forumpost-1 img {
+  width: 100%;
+}
+.forumpost .forumpost-1 .UserBar {
+  background-color: rgb(35, 47, 111);
+  display: flex;
+  position: relative;
+  height: 80px;
+}
+.forumpost .forumpost-1 .UserBar img {
+  width: 11.9%;
+}
+.forumpost .forumpost-1 .UserBar .UserInfo {
+  position: relative;
+  margin: 5px;
+}
+.forumpost .forumpost-1 .UserBar .UserInfo p {
+  margin: 0px;
+  text-align: start;
+  padding: 0px;
+  font-size: 16px;
+}
+.forumpost .forumpost-1 .UserBar span {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .forumpost .forumpost-1 .UserBar {
+    background-color: rgb(35, 47, 111);
+    position: relative;
+  }
+  .forumpost .forumpost-1 .UserBar img {
+    width: 16%;
+  }
+  .forumpost .forumpost-1 .UserBar .UserInfo {
+    position: relative;
+    margin: 5px;
+  }
+  .forumpost .forumpost-1 .UserBar .UserInfo p {
+    margin: 0px;
+    text-align: start;
+    padding: 0px;
+    font-size: 16px;
+  }
+  .forumpost .forumpost-1 .UserBar span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+}
+.forumpost .forumpost_23 {
+  padding: 0px;
+}
+.forumpost .forumpost-2 {
+  overflow: hidden;
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+.forumpost .forumpost-2 .forumpost-2img {
+  height: 250px;
+}
+.forumpost .forumpost-2 .forumpost-2img img {
+  width: 100%;
+}
+.forumpost .forumpost-2 .UserBar {
+  background-color: rgb(35, 47, 111);
+  display: flex;
+  position: relative;
+  height: 80px;
+}
+.forumpost .forumpost-2 .UserBar .UserInfo {
+  position: relative;
+  margin: 5px;
+}
+.forumpost .forumpost-2 .UserBar .UserInfo p {
+  margin: 0px;
+  text-align: start;
+  padding: 0px;
+  font-size: 16px;
+}
+.forumpost .forumpost-2 .UserBar span {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .forumpost .forumpost-2 .UserBar {
+    background-color: rgb(35, 47, 111);
+    position: relative;
+  }
+  .forumpost .forumpost-2 .UserBar .UserInfo {
+    position: relative;
+    margin: 5px;
+  }
+  .forumpost .forumpost-2 .UserBar .UserInfo p {
+    margin: 0px;
+    text-align: start;
+    padding: 0px;
+    font-size: 16px;
+  }
+  .forumpost .forumpost-2 .UserBar span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+}
+.forumpost .forumpost-3 {
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+.forumpost .forumpost-3 .forumpost-3img {
+  overflow: hidden;
+  height: 269px;
+}
+.forumpost .forumpost-3 .forumpost-3img img {
+  width: 100%;
+}
+.forumpost .forumpost-3 .UserBar {
+  background-color: rgb(35, 47, 111);
+  display: flex;
+  position: relative;
+  height: 80px;
+}
+.forumpost .forumpost-3 .UserBar .UserInfo {
+  position: relative;
+  margin: 5px;
+}
+.forumpost .forumpost-3 .UserBar .UserInfo p {
+  margin: 0px;
+  text-align: start;
+  padding: 0px;
+  font-size: 16px;
+}
+.forumpost .forumpost-3 .UserBar span {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .forumpost .forumpost-3 .UserBar {
+    background-color: rgb(35, 47, 111);
+  }
+  .forumpost .forumpost-3 .UserBar .UserInfo {
+    position: relative;
+    margin: 5px;
+  }
+  .forumpost .forumpost-3 .UserBar .UserInfo p {
+    margin: 0px;
+    text-align: start;
+    padding: 0px;
+    font-size: 16px;
+  }
+  .forumpost .forumpost-3 .UserBar span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+}
+
+.forumpostMD {
+  color: white;
+  position: relative;
+  text-align: center;
+}
+.forumpostMD .MDPostContent {
+  background-color: rgb(26, 27, 55);
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+.forumpostMD .MDPostContent > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  height: 80px;
+}
+.forumpostMD a > h1 {
+  font-size: 28px;
+  background-color: rgb(20, 130, 191);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 25px;
+}
+.forumpostMD p {
+  font-size: 18px;
+  text-align: start;
+  padding: 0 15px;
+}
+.forumpostMD .UserBar {
+  background-color: rgb(35, 47, 111);
+  display: flex;
+  position: relative;
+  height: 80px;
+}
+.forumpostMD .UserBar .UserInfo {
+  position: relative;
+  margin: 5px;
+}
+.forumpostMD .UserBar .UserInfo p {
+  margin: 0px;
+  text-align: start;
+  padding: 0px;
+  font-size: 16px;
+}
+.forumpostMD .UserBar span {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .forumpostMD .MDPostContent {
+    margin: 0px;
+    padding: 0px;
+  }
+  .forumpostMD .UserBar {
+    background-color: rgb(35, 47, 111);
+    position: relative;
+  }
+  .forumpostMD .UserBar .UserInfo {
+    position: relative;
+    margin: 5px;
+  }
+  .forumpostMD .UserBar .UserInfo p {
+    margin: 0px;
+    text-align: start;
+    padding: 0px;
+    font-size: 16px;
+  }
+  .forumpostMD .UserBar span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+}
+
+.forumpostED {
+  position: relative;
+  color: white;
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+.forumpostED > a > img {
+  width: 100%;
+}
+.forumpostED .UserBar {
+  background-color: rgb(35, 47, 111);
+  display: flex;
+  height: 80px;
+}
+.forumpostED .UserBar .UserInfo {
+  position: relative;
+  margin: 5px;
+}
+.forumpostED .UserBar .UserInfo p {
+  margin: 0px;
+  text-align: start;
+  padding: 0px;
+  font-size: 16px;
+}
+.forumpostED .UserBar span {
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .forumpostED .UserBar {
+    background-color: rgb(35, 47, 111);
+    display: flex;
+    position: absolute;
+    height: 80px;
+    width: 400px;
+    bottom: 0;
+    right: 0;
+  }
+  .forumpostED .UserBar .UserInfo {
+    position: relative;
+    margin: 5px;
+  }
+  .forumpostED .UserBar .UserInfo p {
+    margin: 0px;
+    text-align: start;
+    padding: 0px;
+    font-size: 16px;
+  }
+  .forumpostED .UserBar span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 5px;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=ForumStyle.css.map */

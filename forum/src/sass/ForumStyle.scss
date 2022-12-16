@@ -1,0 +1,491 @@
+body {
+    background-color: rgb(23, 32, 44) !important;
+    font-family: Microsoft JhengHei;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.forumBGC {
+    background-color: rgb(32, 28, 28);
+    position: relative;
+    top: 80px;
+    padding: 5px;
+    -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+    box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+
+.forumTitle {
+    position: relative;
+    text-align: center;
+
+    h1 {
+        background: rgb(37, 77, 123);
+        background: linear-gradient(0deg, rgba(37, 77, 123, 0) 0%, rgba(0, 49, 106, 1) 100%);
+        font-size: 120px;
+        color: white;
+    }
+
+    p {
+        color: white;
+        font-size: 25px;
+        position: relative;
+    }
+}
+
+.forumbar {
+    position: relative;
+
+    ul {
+        display: flex;
+        padding: 0px;
+        position: relative;
+        justify-content: center;
+
+        li {
+            background-color: rgb(0, 49, 106);
+            background: linear-gradient(0deg, rgba(0, 49, 106, 1) 0%, rgba(0, 49, 106, 0) 100%);
+            list-style-type: none;
+            font-size: 30px;
+            margin: 0 20px;
+            padding: 0 15px;
+            border-radius: 25px;
+            text-align: center;
+            -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+            box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+
+}
+
+//上層區塊
+.forumpost {
+    color: white;
+    margin: 0px;
+    display: flex;
+
+    .forumpost-1 {
+        text-align: center;
+        background-color: rgb(26, 27, 55);
+        padding: 0px;
+        margin: auto;
+        -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+        box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+
+        h1 {
+            font-size: 28px;
+            padding: 0 25px;
+            background-color: rgb(20, 130, 191);
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        >p {
+            font-size: 18px;
+            text-align: start;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 9; // 行數
+            -webkit-box-orient: vertical;
+            white-space: normal;
+            margin: 15px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .UserBar {
+            background-color: rgba(35, 47, 111);
+            display: flex;
+            position: relative;
+            height: 80px;
+
+            img {
+                width: 11.9%;
+            }
+
+            .UserInfo {
+                position: relative;
+                margin: 5px;
+
+                p {
+                    margin: 0px;
+                    text-align: start;
+                    padding: 0px;
+                    font-size: 16px;
+                }
+            }
+
+
+            span {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+
+            .UserBar {
+                background-color: rgba(35, 47, 111);
+                position: relative;
+
+                img {
+                    width: 16%;
+                }
+
+                .UserInfo {
+                    position: relative;
+                    margin: 5px;
+
+                    p {
+                        margin: 0px;
+                        text-align: start;
+                        padding: 0px;
+                        font-size: 16px;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                    font-size: 16px;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    .forumpost_23 {
+        padding: 0px;
+    }
+
+    .forumpost-2 {
+        overflow: hidden;
+        -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+        box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+
+        .forumpost-2img {
+            height: 250px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .UserBar {
+            background-color: rgba(35, 47, 111);
+            display: flex;
+            position: relative;
+            height: 80px;
+
+
+
+            .UserInfo {
+                position: relative;
+                margin: 5px;
+
+                p {
+                    margin: 0px;
+                    text-align: start;
+                    padding: 0px;
+                    font-size: 16px;
+                }
+            }
+
+
+            span {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+
+
+            .UserBar {
+                background-color: rgba(35, 47, 111);
+                position: relative;
+
+                .UserInfo {
+                    position: relative;
+                    margin: 5px;
+
+                    p {
+                        margin: 0px;
+                        text-align: start;
+                        padding: 0px;
+                        font-size: 16px;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                    font-size: 16px;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    .forumpost-3 {
+        -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+        box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+
+        .forumpost-3img {
+            overflow: hidden;
+            height: 269px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .UserBar {
+            background-color: rgba(35, 47, 111);
+            display: flex;
+            position: relative;
+            height: 80px;
+
+
+
+            .UserInfo {
+                position: relative;
+                margin: 5px;
+
+                p {
+                    margin: 0px;
+                    text-align: start;
+                    padding: 0px;
+                    font-size: 16px;
+                }
+            }
+
+
+            span {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+
+            .UserBar {
+                background-color: rgba(35, 47, 111);
+
+                .UserInfo {
+                    position: relative;
+                    margin: 5px;
+
+                    p {
+                        margin: 0px;
+                        text-align: start;
+                        padding: 0px;
+                        font-size: 16px;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                    font-size: 16px;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+//中間區塊
+.forumpostMD {
+    color: white;
+    position: relative;
+    text-align: center;
+
+    .MDPostContent {
+        background-color: rgb(26, 27, 55);
+        -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+        box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+
+
+
+        >p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4; // 行數
+            -webkit-box-orient: vertical;
+            white-space: normal;
+            height: 80px;            
+        }
+
+    }
+
+    a>h1 {
+        font-size: 28px;
+        background-color: rgb(20, 130, 191);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 0 25px;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: start;
+        padding: 0 15px;
+    }
+
+    .UserBar {
+        background-color: rgba(35, 47, 111);
+        display: flex;
+        position: relative;
+        height: 80px;
+
+        .UserInfo {
+            position: relative;
+            margin: 5px;
+
+            p {
+                margin: 0px;
+                text-align: start;
+                padding: 0px;
+                font-size: 16px;
+            }
+        }
+
+
+        span {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        .MDPostContent {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .UserBar {
+            background-color: rgba(35, 47, 111);
+            position: relative;
+
+            .UserInfo {
+                position: relative;
+                margin: 5px;
+
+                p {
+                    margin: 0px;
+                    text-align: start;
+                    padding: 0px;
+                    font-size: 16px;
+                }
+            }
+
+            span {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                font-size: 16px;
+                margin: 0 5px;
+            }
+        }
+    }
+
+
+}
+
+//底層區塊
+.forumpostED {
+    position: relative;
+    color: white;
+    -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+    box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+
+    >a>img {
+        width: 100%;
+    }
+
+    .UserBar {
+        background-color: rgba(35, 47, 111);
+        display: flex;
+        height: 80px;
+
+        .UserInfo {
+            position: relative;
+            margin: 5px;
+
+            p {
+                margin: 0px;
+                text-align: start;
+                padding: 0px;
+                font-size: 16px;
+
+            }
+        }
+
+
+        span {
+            font-size: 18px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        .UserBar {
+            background-color: rgba(35, 47, 111);
+            display: flex;
+            position: absolute;
+            height: 80px;
+            width: 400px;
+            bottom: 0;
+            right: 0;
+
+            .UserInfo {
+                position: relative;
+                margin: 5px;
+
+                p {
+                    margin: 0px;
+                    text-align: start;
+                    padding: 0px;
+                    font-size: 16px;
+
+                }
+            }
+
+            span {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 5px;
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+.main-head {
+    background-color: rgb(0, 41, 80);
+    top: 0px;
+    color: white;
+    height: 65px;
+    position: fixed;
+    z-index: 1;
+
+
+
+
+    .logo {
+        >img {
+            // background-color: #f00;
+            // width: 100%;
+            display: flex;
+            height: 65px;
+        }
+
+        >h1 {
+            font-size: 3.5rem;
+            position: relative;
+            text-align: center;
+            line-height: 65px;
+        }
+    }
+
+    .NavBar {
+        line-height: 65px;
+        
+        ul {
+            display: flex;
+            // background-color: aquamarine;
+            
+            li {
+                list-style-type: none;
+                position: relative;
+                text-align: center;
+                background-color: rgb(0, 41, 80);
+                height: 65px;
+
+                img {
+                    position: relative;
+                    height: 65px;
+                    bottom: 9px;
+                    left: 35px;
+                    padding: 13px;
+                }
+
+                &:hover {
+                    background-color: rgb(0, 49, 106);
+                }
+
+                a {
+                    position: relative;
+                    margin: 0px 35px;
+                    font-size: 26px;
+                    color: white;
+                    border-bottom: 0px solid #f00;
+                    transition: .4s;
+                    // top: 5px;
+
+                    &::after {
+                        content: " ";
+                        position: absolute;
+                        right: 50%;
+                        left: 50%;
+                        bottom: -5px;
+                        border-bottom: 4px solid white;
+                        transition: .3s;
+                    }
+
+                    &:hover {
+                        &::after {
+                            right: 0%;
+                            left: 0%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* reset */
+    body,
+    h1,
+    ul,
+    li {
+        margin: 0;
+    }
+
+    /* NavBar */
+    // nav {
+
+    //     &::after {
+    //         content: "";
+    //         display: block;
+    //         clear: both;
+    //     }
+    // }
+
+    /* 隱藏 checkbox */
+    input {
+        display: none;
+    }
+
+    /* 漢堡按鈕 */
+    label {
+        float: right;
+        // padding: 0px;
+        cursor: pointer;
+
+        img {
+            width: 30px;
+            vertical-align: middle;
+        }
+    }
+
+    /* menu*/
+    .menu {
+        clear: both;
+        position: relative;
+        right: 25px;
+    }
+
+    /* 下拉選單效果 */
+    .menu {
+        max-height: 0px;
+        overflow: hidden;
+        transition: .2s;
+        /* 動畫秒數 */
+    }
+
+    input:checked~.menu {
+        max-height: 100%;
+    }
+
+    /* mediaquery */
+    @media screen and (min-width: 768px) {
+        label {
+            display: none;
+        }
+
+        .menu {
+            max-height: 65px;
+        }
+    }
+
+    .MemberInfo {
+        height: 65px;
+        display: flex;
+
+        >p {
+            font-size: 24px;
+            position: relative;
+            line-height: 65px;
+        }
+
+        >img {
+            padding: 10px;
+        }
+
+    }
+
+    .shoppingcart {
+        display: flex;
+        height: 65px;
+
+        a {
+            img {
+                height: 65px;
+                padding: 10px;
+            }
+        }
+    }
+
+    .dropdown {
+
+        #InfoBar {
+            padding: 15px 10px;
+            list-style-type: none;
+            background-color: rgb(44, 90, 150);
+            display: none;
+            font-size: 22px;
+            text-align: center;
+            float: right;
+        }
+
+    }
+
+    .downinfo {
+        display: none;
+    }
+
+    @media screen and (max-width:768px) {
+
+        .MemberInfo{
+            display: none;
+        }
+
+        .downinfo {
+            display: block;
+        }
+
+        .shoppingcart {
+            display: none;
+        }
+    }
+}

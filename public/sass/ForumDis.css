@@ -1,0 +1,296 @@
+body {
+  background-color: black;
+}
+
+.main-head {
+  background-color: rgb(0, 41, 80);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: white;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+}
+.main-head h1 {
+  font-size: 68px;
+  margin: 0 25px;
+  position: relative;
+}
+.main-head nav {
+  position: relative;
+  left: 25%;
+  bottom: 5px;
+}
+.main-head nav ul {
+  display: flex;
+  padding: 0px;
+}
+.main-head nav ul :hover {
+  background-color: rgb(0, 49, 106);
+  height: 80px;
+}
+.main-head nav ul li {
+  list-style-type: none;
+  position: relative;
+  bottom: 11px;
+}
+.main-head nav ul li a {
+  position: relative;
+  top: 20px;
+  margin: 0 35px;
+  font-size: 32px;
+  color: white;
+  border-bottom: 0px solid #f00;
+  transition: 0.4s;
+}
+.main-head nav ul li a::after {
+  content: " ";
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: -5px;
+  border-bottom: 4px solid white;
+  transition: 0.3s;
+}
+.main-head nav ul li a:hover::after {
+  right: 0%;
+  left: 0%;
+}
+.main-head .searchbar {
+  border-radius: 25px;
+  height: 60%;
+  background-color: rgb(106, 106, 106);
+  display: flex;
+  position: relative;
+  margin: 20px 0px;
+  left: 32%;
+}
+.main-head .searchbar input {
+  border: 0px;
+  border-radius: 25px 0px 0px 25px;
+  font-size: 28px;
+}
+.main-head .searchbar img {
+  height: 80%;
+  margin: 5px 25px;
+}
+.main-head h2 {
+  margin: 35px 15px;
+  font-size: 32px;
+  position: relative;
+  left: 55%;
+  bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.forumBGC {
+  position: relative;
+  margin: 80px 280px;
+}
+
+.forumDisPIC {
+  width: 80%;
+  height: 400px;
+  overflow: hidden;
+}
+.forumDisPIC img {
+  width: 100%;
+  position: relative;
+}
+
+.forumbar {
+  position: relative;
+  width: 80%;
+}
+.forumbar button {
+  font-size: 24px;
+  color: #ffffff;
+  background-color: rgb(0, 41, 80);
+  padding: 0px 15px;
+  border-radius: 5px;
+  position: absolute;
+  height: 100%;
+  right: 0px;
+  border: 0px;
+}
+.forumbar button:hover {
+  background: rgb(0, 100, 213);
+}
+.forumbar ul {
+  position: relative;
+  display: flex;
+  padding: 0px;
+  position: relative;
+}
+.forumbar ul li {
+  background-color: rgb(0, 49, 106);
+  background: linear-gradient(0deg, rgb(0, 49, 106) 0%, rgba(0, 49, 106, 0) 100%);
+  width: 10%;
+  list-style-type: none;
+  font-size: 24px;
+  margin: 0 5px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 0 10px;
+}
+.forumbar ul li:hover {
+  background: linear-gradient(0deg, rgb(0, 100, 213) 0%, rgba(0, 49, 106, 0) 100%);
+}
+.forumbar ul li a {
+  color: white;
+}
+
+.ForumSection {
+  color: white;
+  background: rgb(3, 64, 98);
+  width: 80%;
+}
+.ForumSection .PostTop {
+  height: 40px;
+  display: flex;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgb(230, 219, 79));
+  padding: 10px;
+  margin: 10px 0px;
+}
+.ForumSection .PostTop:hover {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgb(183, 254, 148));
+}
+.ForumSection .PostTop .ForumPostPic {
+  background-color: beige;
+  bottom: 10px;
+  width: 130px;
+  height: 60px;
+  position: relative;
+  left: 25px;
+}
+.ForumSection .PostTop .ForumPostPic img {
+  width: 100%;
+  height: 100%;
+}
+.ForumSection .PostTop h1 {
+  font-size: 32px;
+  position: relative;
+  bottom: 28px;
+  left: 40px;
+  background-color: rgb(222, 69, 69);
+  border-radius: 70px;
+  height: 50px;
+  padding: 5px 20px 0px 20px;
+}
+.ForumSection .PostTop .ForumPostLength {
+  width: 75%;
+}
+.ForumSection .PostTop .ForumPostLength h2 {
+  font-size: 28px;
+  position: absolute;
+  left: 180px;
+  margin: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ForumSection .PostTop .UserInfo {
+  position: absolute;
+  margin: 0 280px;
+  right: 0px;
+}
+.ForumSection .PostTop .UserInfo p {
+  font-size: 14px;
+  position: relative;
+  margin: 3px 0px 0px 0px;
+}
+
+.ForumPost {
+  height: 40px;
+  display: flex;
+  background: rgb(113, 204, 155);
+  background: linear-gradient(270deg, rgba(113, 204, 155, 0) 0%, rgb(113, 204, 155) 100%);
+  padding: 10px;
+  margin: 10px 0px;
+}
+.ForumPost:hover {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgb(183, 254, 148));
+}
+.ForumPost .ForumPostPic {
+  background-color: beige;
+  bottom: 10px;
+  width: 130px;
+  height: 60px;
+  position: relative;
+  left: 25px;
+}
+.ForumPost .ForumPostPic img {
+  width: 100%;
+  height: 100%;
+}
+.ForumPost h1 {
+  font-size: 32px;
+  position: relative;
+  bottom: 28px;
+  left: 40px;
+  background-color: rgb(222, 69, 69);
+  border-radius: 70px;
+  height: 50px;
+  padding: 5px 20px 0px 20px;
+}
+.ForumPost .ForumPostLength {
+  width: 75%;
+}
+.ForumPost .ForumPostLength h2 {
+  font-size: 28px;
+  position: absolute;
+  left: 180px;
+  margin: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ForumPost .UserInfo {
+  position: absolute;
+  margin: 0 280px;
+  right: 0px;
+}
+.ForumPost .UserInfo p {
+  font-size: 14px;
+  position: relative;
+  margin: 3px 0px 0px 0px;
+}
+
+.forumPage {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  margin: 20px;
+}
+.forumPage a {
+  border: 1px solid;
+  padding: 5px 7px;
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.forumPage :hover {
+  background-color: rgb(0, 49, 106);
+}
+.forumPage .page-current {
+  color: #ffffff;
+  background-color: rgb(0, 49, 106);
+}
+.forumPage .page-prev {
+  color: #ffe3c6;
+}
+.forumPage a,
+.forumPage a:hover,
+.forumPage .page-prev,
+.forumPage .page-current {
+  border: 1px solid;
+  padding: 5px 7px;
+}
+
+/*# sourceMappingURL=ForumDis.css.map */

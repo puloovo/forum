@@ -1,0 +1,229 @@
+a {
+    text-decoration: none;
+}
+
+
+
+.ForumDisforumBGC {
+    position: relative;
+    background-color: rgb(34, 34, 34);
+    top: 80px;
+
+    .forumgameDisPIC {
+        width: 100%;
+        overflow: hidden;
+
+        >img {
+            width: 100%;
+        }
+    }
+}
+
+.PostBTN {
+    font-size: 24px;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0px;
+    position: absolute;
+    top: 0px;
+    right:  0;
+
+    &:hover {
+        background: rgb(0, 100, 213);
+    }
+}
+
+.ForumDisPIC {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.ForumDisforumbar {
+    position: relative;
+    width: 100%;
+
+
+
+
+
+    ul {
+        position: relative;
+        display: flex;
+        padding: 0px;
+        position: relative;
+        margin: 5px 0px;
+
+        li {
+            background-color: rgb(0, 49, 106);
+            background: linear-gradient(0deg, rgba(0, 49, 106, 1) 0%, rgba(0, 49, 106, 0) 100%);
+            list-style-type: none;
+            font-size: 24px;
+            margin: 0 15px;
+            border-radius: 25px;
+            text-align: center;
+
+            &:hover {
+                background: linear-gradient(0deg, rgb(0, 100, 213) 0%, rgba(0, 49, 106, 0) 100%);
+
+            }
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+
+}
+
+.ForumDisForumSection {
+    color: white;
+    background: rgb(3, 64, 98);
+
+    .PostTop {
+        height: 60px;
+        display: flex;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(54, 167, 156, 1) 100%);
+        margin: auto;
+
+        &:hover {
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgb(183, 254, 148));
+        }
+
+        h1 {
+            position: relative;
+            border-radius: 70px;
+            text-align: center;
+            line-height: 60px;
+
+        }
+
+
+        .ForumPostLength {
+
+            a {
+                color: white;
+            }
+
+            h2 {
+                font-size: 28px;
+                line-height: 60px;
+                position: relative;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .UserInfo {
+            position: relative;
+
+            p {
+                font-size: 14px;
+                position: relative;
+                margin: 5px 0px 0px 0px;
+                text-align: end;
+            }
+        }
+
+    }
+
+    .ForumDisForumPost {
+        height: 60px;
+        display: flex;
+        // background: rgb(113, 204, 155);
+        // background: linear-gradient(270deg, rgba(113, 204, 155, 0) 0%, rgba(113, 204, 155, 1) 100%);
+
+
+
+        &:hover {
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgb(183, 254, 148));
+        }
+
+        .ForumPostPic {
+            position: relative;
+            overflow: hidden;
+            height: 60px;
+            width: 100%;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+        .ForumPostLength {
+            a {
+                color: white;
+            }
+
+            h2 {
+                font-size: 28px;
+                line-height: 60px;
+                position: relative;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .UserInfo {
+            position: relative;
+
+            p {
+                font-size: 14px;
+                position: relative;
+                margin: 5px 0px 0px 0px;
+                text-align: end;
+            }
+        }
+
+    }
+}
+
+
+
+.forumPage {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    margin: 20px;
+
+    a {
+        border: 1px solid;
+        padding: 5px 7px;
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+
+    :hover {
+        background-color: rgb(0, 49, 106);
+    }
+
+    .page-current {
+        color: #ffffff;
+        background-color: rgb(0, 49, 106);
+    }
+
+    .page-prev {
+        color: #ffe3c6;
+    }
+
+    a,
+    a:hover,
+    .page-prev,
+    .page-current {
+        border: 1px solid;
+        padding: 5px 7px;
+    }
+}

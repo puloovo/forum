@@ -1,0 +1,251 @@
+body {
+  background-color: rgb(23, 32, 44) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.main-head {
+  background-color: rgb(0, 41, 80);
+  top: 0px;
+  left: 0px;
+  color: white;
+  height: 65px;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+}
+.main-head > h1 {
+  font-size: 56px;
+  position: relative;
+}
+.main-head nav {
+  position: relative;
+  left: 15%;
+}
+.main-head nav ul {
+  display: flex;
+  padding: 0px;
+}
+.main-head nav ul :hover {
+  background-color: rgb(0, 49, 106);
+  height: 75px;
+}
+.main-head nav ul li {
+  list-style-type: none;
+  position: relative;
+  bottom: 11px;
+  text-align: center;
+}
+.main-head nav ul li a {
+  position: relative;
+  top: 20px;
+  margin: 0px 35px;
+  font-size: 32px;
+  color: white;
+  border-bottom: 0px solid #f00;
+  transition: 0.4s;
+}
+.main-head nav ul li a::after {
+  content: " ";
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: -5px;
+  border-bottom: 4px solid white;
+  transition: 0.3s;
+}
+.main-head nav ul li a:hover::after {
+  right: 0%;
+  left: 0%;
+}
+.main-head .MemberInfo {
+  display: flex;
+  height: 50%;
+  top: 30%;
+  position: relative;
+}
+.main-head .MemberInfo > p {
+  font-size: 24px;
+}
+.main-head .MemberInfo > img {
+  margin: 5px;
+}
+.main-head .dropdown {
+  height: 50%;
+  top: 30%;
+  position: relative;
+  width: 35%;
+}
+.main-head .dropdown > ul {
+  padding: 15px 10px;
+  list-style-type: none;
+  background-color: rgb(23, 32, 44);
+  display: none;
+  text-align: center;
+  font-size: 22px;
+}
+
+.forumBGC {
+  background-color: rgb(32, 28, 28);
+  position: relative;
+  top: 65px;
+  width: 55% !important;
+  padding: 25px;
+  margin: 0px 420px;
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+
+.forumTitle {
+  background: rgb(37, 77, 123);
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+.forumTitle h1 {
+  background: rgb(37, 77, 123);
+  background: linear-gradient(0deg, rgba(37, 77, 123, 0) 0%, rgb(0, 49, 106) 100%);
+  font-size: 120px;
+  color: white;
+}
+.forumTitle p {
+  color: white;
+  font-size: 25px;
+  position: relative;
+}
+
+@keyframes example {
+  0% {
+    right: 0px;
+    bottom: 180px;
+  }
+  100% {
+    right: 0px;
+    bottom: 0px;
+  }
+}
+.forumDis {
+  background-color: rgb(3, 64, 98);
+  display: flex;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+.forumDis:hover .forumDisGamerNum {
+  color: rgba(212, 212, 212, 0.4);
+  transition: 0.5s;
+  animation: example;
+  animation-duration: 1s;
+  right: 0px;
+  bottom: 0px;
+}
+.forumDis .forumDisPic {
+  height: 115px;
+  overflow: hidden;
+  width: 60%;
+  height: 100%;
+}
+.forumDis .forumDisPic img {
+  width: 100%;
+  height: 100%;
+}
+.forumDis .forumDisPic img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.forumDisGamerNum {
+  position: absolute;
+  height: 180px;
+  right: 0px;
+  bottom: 180px;
+}
+.forumDisGamerNum > h1 {
+  font-size: 200px;
+  color: rgba(212, 212, 212, 0.4);
+}
+
+.down {
+  background: rgb(204, 113, 113);
+  background: linear-gradient(270deg, rgba(204, 113, 113, 0) 0%, rgb(204, 113, 113) 100%);
+  position: relative;
+  height: 80%;
+}
+
+.Up {
+  position: relative;
+  background: rgb(113, 204, 155);
+  background: linear-gradient(270deg, rgba(113, 204, 155, 0) 0%, rgb(113, 204, 155) 100%);
+  height: 80%;
+}
+
+.forumDisGamer {
+  color: white;
+  width: 50%;
+}
+.forumDisGamer h1 {
+  margin: 10px 5px;
+  position: relative;
+  font-size: 42px;
+}
+.forumDisGamer h2 {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.forumDisGamerBar {
+  display: flex;
+  position: absolute;
+  height: 25px;
+  bottom: 0px;
+  left: 55%;
+  color: white;
+  margin: 0 5px;
+}
+.forumDisGamerBar > p {
+  font-size: 18px;
+  padding: 0px 90px 0px 0px;
+}
+.forumDisGamerBar span {
+  font-size: 18px;
+}
+
+.forumPage {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  margin: 20px;
+}
+.forumPage a {
+  border: 1px solid;
+  padding: 5px 7px;
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.forumPage :hover {
+  background-color: rgb(0, 49, 106);
+}
+.forumPage .page-current {
+  color: #ffffff;
+  background-color: rgb(0, 49, 106);
+}
+.forumPage .page-prev {
+  color: #ffe3c6;
+}
+.forumPage a,
+.forumPage a:hover,
+.forumPage .page-prev,
+.forumPage .page-current {
+  border: 1px solid;
+  padding: 5px 7px;
+}
+
+/*# sourceMappingURL=ForumGamerDis.css.map */

@@ -1,0 +1,443 @@
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-head {
+  background-color: rgb(0, 41, 80);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: white;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+}
+.main-head h1 {
+  font-size: 68px;
+  bottom: 25px;
+  margin: 0 25px;
+  position: relative;
+}
+.main-head nav {
+  position: relative;
+  left: 25%;
+  bottom: 5px;
+}
+.main-head nav ul {
+  display: flex;
+  padding: 0px;
+}
+.main-head nav ul li {
+  list-style-type: none;
+}
+.main-head nav ul li a {
+  margin: 0 35px;
+  font-size: 32px;
+  color: white;
+}
+.main-head .searchbar {
+  border-radius: 25px;
+  height: 60%;
+  background-color: rgb(106, 106, 106);
+  display: flex;
+  position: relative;
+  margin: 20px 0px;
+  left: 32%;
+}
+.main-head .searchbar input {
+  border: 0px;
+  border-radius: 25px 0px 0px 25px;
+  font-size: 28px;
+}
+.main-head .searchbar img {
+  height: 80%;
+  margin: 5px 25px;
+}
+.main-head h2 {
+  margin: 35px 15px;
+  font-size: 32px;
+  position: relative;
+  left: 33%;
+  bottom: 20px;
+}
+
+.forumBGC {
+  background-color: rgb(32, 28, 28);
+  position: relative;
+  top: 80px;
+  margin: 0 180px;
+}
+
+.forumTitle {
+  position: relative;
+  text-align: center;
+}
+.forumTitle h1 {
+  background: rgb(37, 77, 123);
+  background: linear-gradient(0deg, rgba(37, 77, 123, 0) 0%, rgb(0, 49, 106) 100%);
+  font-size: 120px;
+  color: white;
+  margin: 0px;
+}
+.forumTitle p {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  bottom: 70px;
+}
+
+.forumbar {
+  position: relative;
+}
+.forumbar ul {
+  display: flex;
+  padding: 0px;
+  position: relative;
+  bottom: 60px;
+  justify-content: center;
+}
+.forumbar ul li {
+  background-color: rgb(0, 49, 106);
+  background: linear-gradient(0deg, rgb(0, 49, 106) 0%, rgba(0, 49, 106, 0) 100%);
+  width: 10%;
+  list-style-type: none;
+  font-size: 30px;
+  margin: 0 20px;
+  border-radius: 25px;
+  text-align: center;
+}
+.forumbar ul li a {
+  color: white;
+}
+
+.forumpost {
+  color: white;
+  margin: 0 15px;
+  display: flex;
+}
+.forumpost .forumpost-1 {
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(26, 27, 55);
+  overflow: hidden;
+  margin: 0px 15px 0px 0px;
+}
+.forumpost .forumpost-1 h1 {
+  font-size: 30px;
+  background-color: rgb(20, 130, 191);
+  position: relative;
+  bottom: 20px;
+}
+.forumpost .forumpost-1 p {
+  text-align: start;
+  padding: 10px;
+}
+.forumpost .forumpost-1 img {
+  width: 100%;
+  position: relative;
+}
+.forumpost .forumpost-1 .UserBar {
+  display: flex;
+  background-color: rgb(35, 47, 111);
+}
+.forumpost .forumpost-1 .UserBar img {
+  height: 15%;
+  width: 15%;
+}
+.forumpost .forumpost-1 .UserBar .UserInfo {
+  position: relative;
+  font-size: 14px;
+  top: 5px;
+  margin: 0 5px;
+}
+.forumpost .forumpost-1 .UserBar .UserInfo p {
+  margin: 0px;
+  text-align: start;
+  padding: 0px;
+}
+.forumpost .forumpost-1 .UserBar .Vote {
+  width: 20%;
+  margin: 0 5px;
+}
+.forumpost .forumpost-1 .UserBar .Vote .VotePassive,
+.forumpost .forumpost-1 .UserBar .Vote .VoteNegative {
+  display: flex;
+}
+.forumpost .forumpost-1 .UserBar .Vote .VotePassive p,
+.forumpost .forumpost-1 .UserBar .Vote .VoteNegative p {
+  font-size: 18px;
+  position: relative;
+  margin: 0 5px;
+  padding: 0px;
+}
+.forumpost .forumpost-1 .UserBar .Vote .VotePassive img,
+.forumpost .forumpost-1 .UserBar .Vote .VoteNegative img {
+  width: 20%;
+  margin: 5px;
+}
+.forumpost .forumpost-1 .UserBar span {
+  position: relative;
+  top: 50px;
+  left: 175px;
+  height: 50px;
+}
+.forumpost .forumpost-2 {
+  width: 100%;
+  position: relative;
+  background-color: aqua;
+}
+.forumpost .forumpost-2 .forumpost-2img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.forumpost .forumpost-2 .forumpost-2img img {
+  width: 100%;
+}
+.forumpost .forumpost-2 .UserBar {
+  background-color: rgba(35, 47, 111, 0.5);
+  display: flex;
+  position: relative;
+  float: right;
+  width: 28vw;
+  bottom: 8.5vh;
+}
+.forumpost .forumpost-2 .UserBar img {
+  height: 15%;
+  width: 15%;
+}
+.forumpost .forumpost-2 .UserBar .UserInfo {
+  position: relative;
+  font-size: 14px;
+  top: 5px;
+}
+.forumpost .forumpost-2 .UserBar .UserInfo p {
+  margin: 0px;
+  text-align: start;
+  padding: 0px;
+}
+.forumpost .forumpost-2 .UserBar .Vote {
+  width: 20%;
+}
+.forumpost .forumpost-2 .UserBar .Vote .VotePassive,
+.forumpost .forumpost-2 .UserBar .Vote .VoteNegative {
+  display: flex;
+}
+.forumpost .forumpost-2 .UserBar .Vote .VotePassive p,
+.forumpost .forumpost-2 .UserBar .Vote .VoteNegative p {
+  font-size: 18px;
+  position: relative;
+  margin: 0 5px;
+  padding: 0px;
+}
+.forumpost .forumpost-2 .UserBar .Vote .VotePassive img,
+.forumpost .forumpost-2 .UserBar .Vote .VoteNegative img {
+  width: 20%;
+  margin: 5px;
+}
+.forumpost .forumpost-2 .UserBar span {
+  position: relative;
+  top: 50px;
+  left: 190px;
+  height: 20px;
+}
+.forumpost .forumpost-3 {
+  width: 100%;
+  height: 390px;
+  bottom: 70px;
+  position: relative;
+  overflow: hidden;
+  background-color: aquamarine;
+}
+.forumpost .forumpost-3 .forumpost-3img {
+  width: 100%;
+}
+.forumpost .forumpost-3 .forumpost-3img img {
+  width: 100%;
+}
+.forumpost .forumpost-3 .UserBar {
+  background-color: rgba(35, 47, 111, 0.5);
+  display: flex;
+  position: relative;
+  float: right;
+  width: 28vw;
+  bottom: 12vw;
+}
+.forumpost .forumpost-3 .UserBar img {
+  height: 15%;
+  width: 15%;
+}
+.forumpost .forumpost-3 .UserBar .UserInfo {
+  position: relative;
+  font-size: 14px;
+  top: 5px;
+}
+.forumpost .forumpost-3 .UserBar .UserInfo p {
+  margin: 0px;
+  text-align: start;
+  padding: 0px;
+}
+.forumpost .forumpost-3 .UserBar .Vote {
+  width: 20%;
+}
+.forumpost .forumpost-3 .UserBar .Vote .VotePassive,
+.forumpost .forumpost-3 .UserBar .Vote .VoteNegative {
+  display: flex;
+}
+.forumpost .forumpost-3 .UserBar .Vote .VotePassive p,
+.forumpost .forumpost-3 .UserBar .Vote .VoteNegative p {
+  font-size: 18px;
+  position: relative;
+  margin: 0 5px;
+  padding: 0px;
+}
+.forumpost .forumpost-3 .UserBar .Vote .VotePassive img,
+.forumpost .forumpost-3 .UserBar .Vote .VoteNegative img {
+  width: 20%;
+  margin: 5px;
+}
+.forumpost .forumpost-3 .UserBar span {
+  position: relative;
+  top: 48px;
+  left: 200px;
+  height: 20px;
+}
+
+.forumpostMD {
+  color: white;
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  text-align: center;
+  margin: 0 15px;
+}
+.forumpostMD .forumpostMD2 {
+  margin: 0 5px;
+}
+.forumpostMD .MDPostContent {
+  background-color: rgb(26, 27, 55);
+}
+.forumpostMD h1 {
+  font-size: 28px;
+  background-color: rgb(20, 130, 191);
+  bottom: 20px;
+}
+.forumpostMD p {
+  font-size: 18px;
+  text-align: start;
+  padding: 0 15px;
+}
+.forumpostMD .UserBar {
+  background-color: rgb(35, 47, 111);
+  display: flex;
+  position: relative;
+}
+.forumpostMD .UserBar img {
+  height: 15%;
+  width: 15%;
+}
+.forumpostMD .UserBar .UserInfo {
+  position: relative;
+  font-size: 12px;
+  top: 10px;
+}
+.forumpostMD .UserBar .UserInfo p {
+  margin: 0px;
+  text-align: start;
+  padding: 0px;
+  font-size: 12px;
+}
+.forumpostMD .UserBar .Vote {
+  width: 20%;
+}
+.forumpostMD .UserBar .Vote .VotePassive,
+.forumpostMD .UserBar .Vote .VoteNegative {
+  display: flex;
+}
+.forumpostMD .UserBar .Vote .VotePassive p,
+.forumpostMD .UserBar .Vote .VoteNegative p {
+  font-size: 12px;
+  position: relative;
+  margin: 0 5px;
+  padding: 0px;
+}
+.forumpostMD .UserBar .Vote .VotePassive img,
+.forumpostMD .UserBar .Vote .VoteNegative img {
+  width: 15%;
+  margin: 5px;
+}
+.forumpostMD .UserBar span {
+  position: relative;
+  top: 50px;
+  left: 205px;
+  font-size: 12px;
+}
+
+.forumpostED {
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+  bottom: 55px;
+  background-color: bisque;
+  margin: 15px;
+}
+.forumpostED img {
+  width: 100%;
+  height: 100%;
+}
+.forumpostED .UserBar {
+  background-color: rgba(35, 47, 111, 0.5);
+  display: flex;
+  position: relative;
+  width: 28vw;
+  bottom: 4.5vw;
+  float: right;
+}
+.forumpostED .UserBar img {
+  height: 15%;
+  width: 15%;
+}
+.forumpostED .UserBar .UserInfo {
+  position: relative;
+  font-size: 12px;
+  top: 10px;
+}
+.forumpostED .UserBar .UserInfo p {
+  margin: 0px;
+  text-align: start;
+  padding: 0px;
+  font-size: 12px;
+}
+.forumpostED .UserBar .Vote {
+  width: 20%;
+}
+.forumpostED .UserBar .Vote .VotePassive,
+.forumpostED .UserBar .Vote .VoteNegative {
+  display: flex;
+}
+.forumpostED .UserBar .Vote .VotePassive p,
+.forumpostED .UserBar .Vote .VoteNegative p {
+  font-size: 12px;
+  position: relative;
+  margin: 0 5px;
+  padding: 0px;
+}
+.forumpostED .UserBar .Vote .VotePassive img,
+.forumpostED .UserBar .Vote .VoteNegative img {
+  width: 15%;
+  margin: 5px;
+}
+.forumpostED .UserBar span {
+  position: relative;
+  top: 60px;
+  left: 240px;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=ForumStyle.css.map */

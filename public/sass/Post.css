@@ -1,0 +1,283 @@
+body {
+  background-color: rgb(23, 32, 44) !important;
+}
+
+.main-head {
+  background-color: rgb(0, 41, 80);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: white;
+  height: 65px;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+}
+.main-head h1 {
+  font-size: 56px;
+  margin: 0px 250px 0px 350px;
+  position: relative;
+}
+.main-head nav {
+  position: relative;
+  bottom: 5px;
+}
+.main-head nav ul {
+  display: flex;
+  padding: 0px;
+}
+.main-head nav ul :hover {
+  background-color: rgb(0, 49, 106);
+  height: 80px;
+}
+.main-head nav ul li {
+  list-style-type: none;
+  position: relative;
+  bottom: 11px;
+}
+.main-head nav ul li a {
+  position: relative;
+  top: 20px;
+  margin: 0 35px;
+  font-size: 32px;
+  color: white;
+  border-bottom: 0px solid #f00;
+  transition: 0.4s;
+}
+.main-head nav ul li a::after {
+  content: " ";
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: -5px;
+  border-bottom: 4px solid white;
+  transition: 0.3s;
+}
+.main-head nav ul li a:hover::after {
+  right: 0%;
+  left: 0%;
+}
+.main-head .searchbar {
+  border-radius: 25px;
+  height: 60%;
+  background-color: rgb(106, 106, 106);
+  display: flex;
+  position: relative;
+  margin: 20px 0px;
+  left: 32%;
+}
+.main-head .searchbar input {
+  border: 0px;
+  border-radius: 25px 0px 0px 25px;
+  font-size: 28px;
+}
+.main-head .searchbar img {
+  height: 80%;
+  margin: 5px 25px;
+}
+.main-head button {
+  margin: 10px 350px;
+  font-size: 32px;
+  position: absolute;
+  right: 0px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.forumBGC {
+  position: relative;
+  margin: 80px 280px;
+}
+
+.Post {
+  position: relative;
+  color: white;
+  background-color: rgb(52, 56, 58);
+  margin: 100px 0px 0px 0px;
+  border-radius: 35px;
+  width: 80%;
+  left: 10%;
+  -webkit-box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+  box-shadow: 9px 8px 25px -5px rgba(0, 0, 0, 0.86);
+}
+.Post .PostTiltle {
+  display: flex;
+  margin: 0px 50px;
+}
+.Post .PostTiltle > h1 {
+  position: relative;
+  top: 25px;
+}
+.Post .PostTiltle .PostTiltleHeader {
+  background-color: rgb(50, 137, 194);
+  border-radius: 25px;
+  position: relative;
+  padding: 0 10px;
+  height: 60px;
+  margin: 20px 0px;
+}
+.Post .PostTiltle .PostTiltleHeader > h1 {
+  position: relative;
+  top: 5px;
+}
+.Post .PostContent {
+  background-color: rgb(34, 34, 34);
+  margin: 0 25px;
+  border-radius: 35px;
+}
+.Post .PostContent .UserInfo {
+  display: flex;
+  width: 20%;
+  margin: 0px 50px;
+  padding: 20px;
+}
+.Post .PostContent .UserInfo img {
+  width: 100%;
+  height: 100%;
+}
+.Post .PostContent .UserInfo .UserInfoName {
+  width: 140px;
+  display: flex;
+  height: 28px;
+  margin: 10px 15px;
+}
+.Post .PostContent .UserInfo .UserInfoName > span {
+  font-size: 20px;
+  padding: 0 5px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background: rgb(48, 209, 113);
+  background: linear-gradient(0deg, rgb(48, 209, 113) 0%, rgba(48, 209, 113, 0) 100%);
+}
+.Post .PostContent .UserInfo .UserInfoName > p {
+  font-size: 20px;
+}
+.Post .PostContent .UserInfo .UserInfoBar > p {
+  font-size: 20px;
+  width: 200px;
+  margin: 0 25px;
+}
+.Post .PostContent .UserInfo .Vote {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  margin: 10px 60px;
+}
+.Post .PostContent .UserInfo .Vote .VotePos {
+  background-color: rgb(23, 149, 12);
+  display: flex;
+  height: 30px;
+}
+.Post .PostContent .UserInfo .Vote .VotePos p {
+  font-size: 22px;
+  padding: 0 15px;
+}
+.Post .PostContent .UserInfo .Vote .VotePos .VotePic > img {
+  width: 100%;
+}
+.Post .PostContent .UserInfo .Vote .VoteNeg {
+  position: relative;
+  background-color: rgb(222, 69, 69);
+  height: 30px;
+  display: flex;
+}
+.Post .PostContent .UserInfo .Vote .VoteNeg p {
+  font-size: 22px;
+  padding: 0 15px;
+}
+.Post .PostContent .UserInfo .Vote .VoteNeg .VotePic > img {
+  width: 100%;
+}
+.Post .PostContent .PostContentText {
+  text-align: center;
+  padding: 20px 80px;
+}
+.Post .PostContent .PostContentText .PostContentPic {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.Post .PostContent .PostContentText .PostContentPic img {
+  width: 100%;
+}
+.Post .PostContent .VoteBtn {
+  display: flex;
+  width: 25%;
+}
+.Post .PostContent .VoteBtn .VoteBtnPos {
+  display: flex;
+}
+.Post .PostContent .VoteBtn .VoteBtnPos .VoteBtnPosPic {
+  padding: 0px 10px;
+}
+.Post .PostContent .VoteBtn .VoteBtnPos .VoteBtnPosPic img {
+  width: 100%;
+  height: 60%;
+}
+.Post .PostContent .VoteBtn .VoteBtnPos p {
+  font-size: 30px;
+}
+.Post .PostContent .VoteBtn .VoteBtnNeg {
+  display: flex;
+}
+.Post .PostContent .VoteBtn .VoteBtnNeg .VoteBtnNegPic {
+  padding: 0px 10px;
+}
+.Post .PostContent .VoteBtn .VoteBtnNeg .VoteBtnNegPic img {
+  width: 100%;
+  height: 62%;
+}
+.Post .PostContent .VoteBtn .VoteBtnNeg p {
+  font-size: 30px;
+}
+.Post .Postcomment {
+  background-color: rgb(1, 19, 36);
+  border-radius: 0 0 35px 35px;
+}
+.Post .Postcomment .comment {
+  padding: 0 80px;
+  display: flex;
+  height: 76px;
+}
+.Post .Postcomment .comment:hover {
+  background-color: rgb(27, 70, 102);
+}
+.Post .Postcomment .comment:hover:last-child {
+  border-radius: 0 0 35px 35px;
+}
+.Post .Postcomment .comment .commentPic {
+  width: 9%;
+  height: 100%;
+}
+.Post .Postcomment .comment .commentPic > img {
+  width: 100%;
+  height: 100%;
+}
+.Post .Postcomment .comment .commenttext {
+  display: flex;
+  padding: 15px 0px 30px 0px;
+  width: 100%;
+  height: 0%;
+}
+.Post .Postcomment .comment .commenttext > p {
+  font-size: 20px;
+}
+.Post .Postcomment .comment .commenttext > h3 {
+  font-size: 24px;
+  color: rgb(48, 209, 113);
+  padding: 0 15px;
+}
+.Post .Postcomment .comment .CommentInfo {
+  display: inline-flex;
+  width: 10%;
+  height: 0%;
+  padding: 0 10px;
+}
+.Post .Postcomment .comment .CommentInfo > p {
+  font-size: 16px;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=Post.css.map */
